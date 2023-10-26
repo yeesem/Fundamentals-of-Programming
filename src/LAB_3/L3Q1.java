@@ -9,7 +9,5 @@ package LAB_3;
  * @author USER
  */
 public class L3Q1 {
-    public static void main(String[] args) {
-        
-    }
+
 }
