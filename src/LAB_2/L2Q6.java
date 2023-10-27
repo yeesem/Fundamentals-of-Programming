@@ -15,7 +15,6 @@ public class L2Q6 {
         double initialTemp = (scanner.nextDouble() - 32) / 1.8; // Convert to Celsius
         System.out.print("Enter the final temperature in Fahrenheit: ");
         double finalTemp = (scanner.nextDouble() - 32) / 1.8;   // Convert to Celsius
-
         double energy = amount * (finalTemp - initialTemp) * 4184;
         System.out.printf("The energy needed is %e", energy);
     }
