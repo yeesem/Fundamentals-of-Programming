@@ -16,8 +16,8 @@ public class L5Q5 {
         for (int i = 0; i < N; i++)
             nums[i] = random.nextInt(101);
 
-        //nums = new int[]{57, 53, 46, 83, 74, 99, 30, 75, 61, 89,
-        //        28, 30, 56, 41, 27, 32, 79, 48, 46, 88};
+        nums = new int[]{57, 53, 46, 83, 74, 99, 30, 75, 61, 89,
+                28, 30, 56, 41, 27, 32, 79, 48, 46, 88};
 
         System.out.println("A list of 20 random integer within 0 to 100");
         for (int i = 0; i < N - 1; i++)
