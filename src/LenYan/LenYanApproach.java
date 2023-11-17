@@ -145,18 +145,22 @@ class LenYanApproachClass {
     }
 
     public void showDetails(int gdp,int prc){
+
+        double pe = PERatio();
+        double discount = (pe/25) * 100;
+
         System.out.println("\nStock Analysis - " + stockName);
         System.out.println("---------------------------------");
         System.out.println("GDP : " + gdp + "(" + ((gdp < 50)?"FAIL" : "PASS") + ")");
-        System.out.println("Growth rate      : " + CAGR() + " - " + ((CAGR() < 5)? "Unhealty Growth Rate" : "Healthy Growth Rate"));
-        System.out.println("Dividend yield   : " + dividendYield + " - "+ ((dividendYield < 4)? "Lower than Avg Interest Rate" : "High dividend yield"));
-        System.out.println("PE Ratio         : " + PERatio() + " - " + ((PERatio() < 25)? "Undervalued" : "Overvalued"));
+        System.out.println("Growth rate      : " + CAGR() + "% - " + ((CAGR() < 5)? "Unhealty Growth Rate" : "Healthy Growth Rate"));
+        System.out.println("Dividend yield   : " + dividendYield + "% - "+ ((dividendYield < 4)? "Lower than Avg Interest Rate" : "High dividend yield"));
+        System.out.println("PE Ratio         : " + pe + "  - " + ((pe < 25)? "Undervalued" : "Overvalued") + "(" + ((pe<25)? "-":"+") + discount + "%)");
 
         System.out.println();
 
         System.out.println("PRC : " + prc + "(" + ((prc < 50)?"FAIL" : "PASS") + ")");
-        System.out.println("Profit Margin    : " + ProfitMargin());
-        System.out.println("Return on Equity : " + roe );
+        System.out.println("Profit Margin    : " + ProfitMargin() + "%");
+        System.out.println("Return on Equity : " + roe + "%");
         System.out.println("Cash Flow        : " + ((netProfit[0]>0 && cashFlow>0 )? "Healthy Cash Flow" : "Unhealthy Cash Flow"));
     }
     
