@@ -1,4 +1,4 @@
-package LenYan;
+package LAB_1;
 
 import java.time.Year;
 import java.util.Scanner;
