@@ -141,7 +141,7 @@ class LenYanApproachClass {
         if(analysis == '1')
            showDetails(gdp,prc);
         
-        System.out.println("\nThank you.");
+        System.out.print("\nThank you.");
     }
 
     public void showDetails(int gdp,int prc){
