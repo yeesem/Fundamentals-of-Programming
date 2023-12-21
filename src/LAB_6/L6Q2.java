@@ -6,7 +6,7 @@ package LAB_6;
 
 public class L6Q2 {
      public static void main(String[] args) {
-        int row = 7;
+        int row = 9;
 
         System.out.println("Triangle 1");
         for (int i = 1; i <= row; i++) {
@@ -15,6 +15,7 @@ public class L6Q2 {
         }
         System.out.println();
 
+        //1,3,5,7,9,11
         System.out.println("Triangle 2");
         for (int i = 1; i <= row; i++) {
             multiPrint(row - i, ' ');
@@ -24,7 +25,8 @@ public class L6Q2 {
         System.out.println();
 
         System.out.println("Triangle 3");
-        for (int i = 1; i <= row; i++) {
+        for (int i = 1; i < row; i++) {
+            //Increasing and decreasing index
             multiPrint(Math.min(i, row + 1 - i), '*');
             System.out.println();
         }
@@ -32,6 +34,7 @@ public class L6Q2 {
 
         System.out.println("Diamond");
         for (int i = 1; i <= row; i++) {
+            //Increasing and decreasing index
             int min = Math.min(i, row + 1 - i);
             multiPrint(row / 2 - min + 1, ' ');
             multiPrint(2 * min - 1, '*');

@@ -1,0 +1,2 @@
+This is a fundamental of programming course.
+Data Structure course is the prerequisite. 

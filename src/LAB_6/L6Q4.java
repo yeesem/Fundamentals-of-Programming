@@ -6,7 +6,7 @@ package LAB_6;
 
 public class L6Q4 {
      public static void main(String[] args) {
-        System.out.println(gcd(24, 8));
+        System.out.println(gcd(24,8));
         System.out.println(gcd(200, 625));
     }
 
